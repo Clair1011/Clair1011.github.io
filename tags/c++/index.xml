@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on 阿羽的學習歷程</title>
-    <link>https://Clair1011.github.io/blog/</link>
-    <description>Recent content in Blogs on 阿羽的學習歷程</description>
+    <title>C&#43;&#43; on 阿羽的學習歷程</title>
+    <link>https://Clair1011.github.io/tags/c&#43;&#43;/</link>
+    <description>Recent content in C&#43;&#43; on 阿羽的學習歷程</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 28 Jan 2021 15:40:47 +0800</lastBuildDate><atom:link href="https://Clair1011.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Jan 2021 15:40:47 +0800</lastBuildDate><atom:link href="https://Clair1011.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C&#43;&#43;學習筆記</title>
       <link>https://Clair1011.github.io/blog/c&#43;&#43;/</link>
@@ -14,16 +14,6 @@
       
       <guid>https://Clair1011.github.io/blog/c&#43;&#43;/</guid>
       <description>Hello World   #include &amp;lt;iostream&amp;gt;using namespace std; int main(){ //cout &amp;lt;&amp;lt; &amp;#34;hello&amp;#34; &amp;lt;&amp;lt; endl &amp;lt;&amp;lt; &amp;#34;world&amp;#34;; // 印完hello接這印world, endl = end of line 換行的意思(\n) 	int age; cout &amp;lt;&amp;lt; &amp;#34;How old are you?</description>
-    </item>
-    
-    <item>
-      <title>Markdown語法筆記</title>
-      <link>https://Clair1011.github.io/blog/markdown/</link>
-      <pubDate>Wed, 27 Jan 2021 18:55:47 +0800</pubDate>
-      
-      <guid>https://Clair1011.github.io/blog/markdown/</guid>
-      <description>一級標題: # + 標題
-Heading 1 二級標題: ## + 標題</description>
     </item>
     
   </channel>

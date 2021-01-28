@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>阿羽的學習歷程</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="C&#43;&#43;學習程式碼">
+  <meta name="author" content="Claire">
+  <meta name="generator" content="Hugo 0.80.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://Clair1011.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://Clair1011.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://Clair1011.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://Clair1011.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://Clair1011.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://Clair1011.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://Clair1011.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-188236715-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://Clair1011.github.io"><img class="img-fluid"
+          src="https://Clair1011.github.io/images/s.jpg" alt="阿羽的學習歷程"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/winnie.smill/"><i class="ti-facebook"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/winnie_smill/"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/Clair1011"><i class="ti-github"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/%E8%96%87%E7%BE%BD-%E9%99%B3-390a17116/"><i class="ti-linkedin"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://Clair1011.github.io"><img class="img-fluid"
+            src="https://Clair1011.github.io/images/s.jpg" alt="阿羽的學習歷程"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://Clair1011.github.io/">Home</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://Clair1011.github.io/about">About</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://Clair1011.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        
+        <a href="/categories/%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98"
+          class="text-primary">學習筆記</a>
+        
+        <h2>C++學習筆記</h2>
+        <div class="mb-3 post-meta">
+          <span>By Claire</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>28 January 2021</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <ul>
+<li>
+<h4 id="hello-world">Hello World</h4>
+</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;iostream&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic"></span><span style="color:#00f">using</span> <span style="color:#00f">namespace</span> <span style="color:#000">std</span>;
+<span style="color:#00f">int</span> <span style="color:#000">main</span>(){
+	<span style="color:#888;font-style:italic">//cout &lt;&lt; &#34;hello&#34; &lt;&lt; endl &lt;&lt; &#34;world&#34;; // 印完hello接這印world, endl = end of line 換行的意思(\n)
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#00f">int</span> <span style="color:#000">age</span>;
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;How old are you?&#34;</span>;
+	<span style="color:#000">cin</span> &gt;&gt; <span style="color:#000">age</span>;
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;I am &#34;</span> &lt;&lt; <span style="color:#000">age</span> &lt;&lt; <span style="color:#5a2">&#34; years old&#34;</span>;
+	 
+	<span style="color:#000">system</span>(<span style="color:#5a2">&#34;pause&#34;</span>); <span style="color:#888;font-style:italic">// 還給OS前系統暫停 
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#00f">return</span> <span style="color:#3af">0</span>;  <span style="color:#888;font-style:italic">// 結束後還給OS 
+</span></code></pre></div><ul>
+<li>
+<h4 id="輸入輸出-新增標頭檔-include-iomanip">輸入輸出 (新增標頭檔: #include <!-- raw HTML omitted -->)</h4>
+</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;iostream&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;iomanip&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic"></span><span style="color:#00f">using</span> <span style="color:#00f">namespace</span> <span style="color:#000">std</span>;
+
+<span style="color:#00f">int</span> <span style="color:#000">main</span>(){
+	<span style="color:#00f">int</span> <span style="color:#000">i</span>, <span style="color:#000">j</span>, <span style="color:#000">k</span>;
+	<span style="color:#00f">for</span>(<span style="color:#000">i</span> = <span style="color:#3af">1</span>; <span style="color:#000">i</span> &lt;=<span style="color:#3af">5</span>; <span style="color:#000">i</span>++){
+		<span style="color:#00f">for</span>(<span style="color:#000">j</span> = <span style="color:#3af">5</span>-<span style="color:#000">i</span>; <span style="color:#000">j</span> &gt; <span style="color:#3af">0</span>; <span style="color:#000">j</span>--){ <span style="color:#888;font-style:italic">//印出空白部分 
+</span><span style="color:#888;font-style:italic"></span>			<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34; &#34;</span>;
+		}
+		<span style="color:#00f">for</span>(<span style="color:#000">k</span> = <span style="color:#3af">2</span>*<span style="color:#000">i</span>-<span style="color:#3af">1</span>; <span style="color:#000">k</span> &gt; <span style="color:#3af">0</span>; <span style="color:#000">k</span>--){ <span style="color:#888;font-style:italic">//印出星星部分 
+</span><span style="color:#888;font-style:italic"></span>			<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;*&#34;</span>;
+		}
+		<span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">endl</span>;
+	}
+	
+	<span style="color:#00f">return</span> <span style="color:#3af">0</span>;
+}
+</code></pre></div><ul>
+<li>Data Type</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;iostream&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic"></span>
+<span style="color:#00f">using</span> <span style="color:#00f">namespace</span> <span style="color:#000">std</span>;
+
+<span style="color:#00f">int</span> <span style="color:#000">main</span>(){
+	<span style="color:#00f">int</span> <span style="color:#000">MyInt</span> = <span style="color:#3af">100</span>;
+	<span style="color:#00f">double</span> <span style="color:#000">MyDouble</span> = <span style="color:#3af">3.14159</span>;
+	<span style="color:#00f">char</span> <span style="color:#000">Mychar</span> = <span style="color:#5a2">&#39;a&#39;</span>;
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#00f">sizeof</span>(<span style="color:#000">MyInt</span>) &lt;&lt; <span style="color:#000">endl</span>;  <span style="color:#888;font-style:italic">//sizeof(宣告的資料) 回傳資料型別的 byte 
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">MyDouble</span> &lt;&lt; <span style="color:#000">endl</span>;
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">Mychar</span> &lt;&lt;<span style="color:#000">endl</span>;
+	<span style="color:#00f">return</span> <span style="color:#3af">0</span>;
+}
+</code></pre></div><ul>
+<li>
+<h4 id="基礎運算子">基礎運算子</h4>
+</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;iostream&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic"></span>
+<span style="color:#00f">using</span> <span style="color:#00f">namespace</span> <span style="color:#000">std</span>;
+
+<span style="color:#00f">int</span> <span style="color:#000">main</span>(){
+	<span style="color:#888;font-style:italic">//算術運算子
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#00f">int</span> <span style="color:#000">a</span> = <span style="color:#3af">9</span>;
+	<span style="color:#00f">int</span> <span style="color:#000">b</span> = <span style="color:#3af">2</span>;
+	<span style="color:#00f">int</span> <span style="color:#000">c</span> = <span style="color:#000">a</span>+<span style="color:#000">b</span>; <span style="color:#888;font-style:italic">// c = 11
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#00f">int</span> <span style="color:#000">d</span> = <span style="color:#000">a</span>-<span style="color:#000">b</span>; <span style="color:#888;font-style:italic">// d = 7
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#00f">int</span> <span style="color:#000">e</span> = <span style="color:#000">a</span>*<span style="color:#000">b</span>; <span style="color:#888;font-style:italic">// e = 18
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#00f">int</span> <span style="color:#000">f</span> = <span style="color:#000">a</span>/<span style="color:#000">b</span>; <span style="color:#888;font-style:italic">// f = 4
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#00f">int</span> <span style="color:#000">g</span> = <span style="color:#000">a</span>%<span style="color:#3af">5</span>; <span style="color:#888;font-style:italic">// g = 4
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#000">c</span>++; <span style="color:#888;font-style:italic">// c = 12 , c = c +1; c+=1;
+</span><span style="color:#888;font-style:italic"></span>	
+	<span style="color:#888;font-style:italic">// a,b值的交換
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#00f">int</span> <span style="color:#000">temp</span>;
+	<span style="color:#888;font-style:italic">//temp = a; //temp = 9
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#000">a</span> = <span style="color:#000">b</span>; <span style="color:#888;font-style:italic">// a,b,temp = 2,2,9
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#000">b</span> = <span style="color:#000">temp</span>; <span style="color:#888;font-style:italic">// a,b,temp = 2,9,9
+</span><span style="color:#888;font-style:italic"></span>	
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;ab交換後:&#34;</span> &lt;&lt; <span style="color:#000">endl</span>;
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;a: &#34;</span> &lt;&lt; <span style="color:#000">a</span> &lt;&lt; <span style="color:#000">endl</span>;
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;b: &#34;</span> &lt;&lt; <span style="color:#000">b</span> &lt;&lt; <span style="color:#000">endl</span>; 
+	
+	<span style="color:#888;font-style:italic">//邏輯運算子
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#00f">bool</span> <span style="color:#000">myBool</span> = <span style="color:#000">a</span>==<span style="color:#000">b</span> || <span style="color:#000">a</span>&gt;<span style="color:#000">b</span>; <span style="color:#888;font-style:italic">// myBool = 1
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#00f">bool</span> <span style="color:#000">myBool_2</span> = ! (<span style="color:#000">a</span>!=<span style="color:#000">b</span>); <span style="color:#888;font-style:italic">// myBool_2 = 0
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">myBool</span> &lt;&lt; <span style="color:#000">endl</span>;
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">myBool_2</span> &lt;&lt;<span style="color:#000">endl</span>; 
+	
+	<span style="color:#00f">int</span> <span style="color:#000">a</span> = <span style="color:#3af">19</span> % <span style="color:#3af">7</span>; <span style="color:#888;font-style:italic">// a = 5
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#00f">int</span> <span style="color:#000">b</span> = <span style="color:#3af">5</span> * (<span style="color:#3af">3</span> - <span style="color:#3af">1</span>) +<span style="color:#3af">1</span>; <span style="color:#888;font-style:italic">// b = 11
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#000">cout</span> &lt;&lt; ++<span style="color:#000">a</span>*<span style="color:#000">b</span>; <span style="color:#888;font-style:italic">//66
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#00f">return</span> <span style="color:#3af">0</span>;
+} 
+</code></pre></div><ul>
+<li>
+<h4 id="常數-const">常數 Const</h4>
+</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;iostream&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic"></span>
+<span style="color:#00f">using</span> <span style="color:#00f">namespace</span> <span style="color:#000">std</span>;
+
+<span style="color:#00f">int</span> <span style="color:#000">main</span>(){
+	<span style="color:#888;font-style:italic">// 圓面積計算 
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#00f">const</span> <span style="color:#00f">float</span> <span style="color:#000">pi</span> = <span style="color:#3af">3.14</span>; <span style="color:#888;font-style:italic">//使用常數const宣告
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#00f">int</span> <span style="color:#000">r</span>, <span style="color:#000">area</span>;
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;輸入半徑: &#34;</span> ;
+	<span style="color:#000">cin</span> &gt;&gt; <span style="color:#000">r</span>;
+	<span style="color:#000">area</span> = <span style="color:#000">r</span> * <span style="color:#000">r</span> * <span style="color:#000">pi</span>;
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;圓面積為: &#34;</span> &lt;&lt;<span style="color:#000">area</span> &lt;&lt; <span style="color:#000">endl</span>; 
+	
+	<span style="color:#888;font-style:italic">// 美元與台幣匯率計算 
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#00f">const</span> <span style="color:#00f">float</span> <span style="color:#000">rate</span> = <span style="color:#3af">30.8</span>;  <span style="color:#888;font-style:italic">//使用常數const宣告
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#00f">float</span> <span style="color:#000">TWD</span>, <span style="color:#000">USD</span>;
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;輸入台幣金額: &#34;</span>;
+	<span style="color:#000">cin</span> &gt;&gt; <span style="color:#000">TWD</span>;
+	<span style="color:#000">USD</span> = <span style="color:#000">TWD</span>/<span style="color:#000">rate</span>;
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;兌換美元為: &#34;</span> &lt;&lt; <span style="color:#000">USD</span> &lt;&lt; <span style="color:#5a2">&#34;元&#34;</span> &lt;&lt; <span style="color:#000">endl</span>; 
+	<span style="color:#00f">return</span> <span style="color:#3af">0</span>; 
+}
+</code></pre></div><ul>
+<li>
+<h4 id="if-判斷">if 判斷</h4>
+</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;iostream&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic"></span>
+<span style="color:#00f">using</span> <span style="color:#00f">namespace</span> <span style="color:#000">std</span>;
+
+<span style="color:#00f">int</span> <span style="color:#000">main</span>(){
+	<span style="color:#00f">int</span> <span style="color:#000">age</span>;
+	<span style="color:#00f">char</span> <span style="color:#000">edu</span>;
+	
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;請問年齡幾歲? &#34;</span>;
+	<span style="color:#000">cin</span> &gt;&gt; <span style="color:#000">age</span>;
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;是否還在就學中(T/F)&#34;</span>;
+	<span style="color:#000">cin</span> &gt;&gt; <span style="color:#000">edu</span>;
+	<span style="color:#00f">if</span> (<span style="color:#000">age</span> &lt; <span style="color:#3af">19</span>) {
+		<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;目前不用當兵&#34;</span> &lt;&lt; <span style="color:#000">endl</span>;
+	}
+	<span style="color:#00f">else</span> <span style="color:#00f">if</span> (<span style="color:#000">edu</span> == <span style="color:#5a2">&#39;T&#39;</span>){
+		<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;目前還不用當兵&#34;</span> &lt;&lt; <span style="color:#000">endl</span>; 
+	}
+} 
+</code></pre></div><ul>
+<li>
+<h4 id="swich-選擇">swich 選擇</h4>
+</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;iostream&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic"></span>
+<span style="color:#00f">using</span> <span style="color:#00f">namespace</span> <span style="color:#000">std</span>;
+
+<span style="color:#00f">int</span> <span style="color:#000">main</span>(){
+	<span style="color:#00f">int</span> <span style="color:#000">num_1</span>, <span style="color:#000">num_2</span>, <span style="color:#000">ans</span>, <span style="color:#000">choice</span>;
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;請輸入兩個數: &#34;</span>;
+	<span style="color:#000">cin</span> &gt;&gt; <span style="color:#000">num_1</span> &gt;&gt; <span style="color:#000">num_2</span>;
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;1.加法, 2.減法, 3.乘法, 4.除法: &#34;</span>;
+	<span style="color:#000">cin</span> &gt;&gt; <span style="color:#000">choice</span>;
+	
+	<span style="color:#00f">switch</span>(<span style="color:#000">choice</span>){
+		<span style="color:#00f">case</span> <span style="color:#3af">1</span>:
+			<span style="color:#000">ans</span> = <span style="color:#000">num_1</span> + <span style="color:#000">num_2</span>;
+			<span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">ans</span> &lt;&lt; <span style="color:#000">endl</span>;
+			<span style="color:#00f">break</span>;
+		<span style="color:#00f">case</span> <span style="color:#3af">2</span>:
+			 <span style="color:#000">ans</span> = <span style="color:#000">num_1</span> - <span style="color:#000">num_2</span>;
+			 <span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">ans</span> &lt;&lt; <span style="color:#000">endl</span>;
+			 <span style="color:#00f">break</span>;
+		<span style="color:#00f">case</span> <span style="color:#3af">3</span>:
+			<span style="color:#000">ans</span> = <span style="color:#000">num_1</span> * <span style="color:#000">num_2</span>;
+			<span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">ans</span> &lt;&lt; <span style="color:#000">endl</span>;
+			<span style="color:#00f">break</span>;
+		<span style="color:#00f">case</span> <span style="color:#3af">4</span>:
+			<span style="color:#000">ans</span> = <span style="color:#000">num_1</span> / <span style="color:#000">num_2</span>;
+			<span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">ans</span> &lt;&lt; <span style="color:#000">endl</span>;
+			<span style="color:#00f">break</span>;
+		<span style="color:#00f">default</span>:
+			<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;輸入有誤&#34;</span>;
+			<span style="color:#00f">break</span>;
+	
+	}
+} 
+</code></pre></div><ul>
+<li>
+<h4 id="for-迴圈">for 迴圈</h4>
+</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;iostream&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic"></span>
+<span style="color:#00f">using</span> <span style="color:#00f">namespace</span> <span style="color:#000">std</span>;
+
+<span style="color:#00f">int</span> <span style="color:#000">main</span>(){
+	
+	<span style="color:#00f">int</span> <span style="color:#000">i</span>;
+	<span style="color:#00f">for</span>(<span style="color:#000">i</span> = <span style="color:#3af">1</span>; <span style="color:#000">i</span> &lt;= <span style="color:#3af">10</span>; <span style="color:#000">i</span>++){
+		<span style="color:#00f">if</span> (<span style="color:#000">i</span> == <span style="color:#3af">4</span>){
+			<span style="color:#00f">continue</span>;
+		}
+		<span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">i</span> &lt;&lt; <span style="color:#000">endl</span>;
+	}
+	
+}
+</code></pre></div><ul>
+<li>
+<h4 id="while-迴圈">while 迴圈</h4>
+</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;iostream&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic"></span>
+<span style="color:#00f">using</span> <span style="color:#00f">namespace</span> <span style="color:#000">std</span>;
+
+<span style="color:#00f">int</span> <span style="color:#000">main</span>(){
+	
+	<span style="color:#00f">int</span> <span style="color:#000">my_num</span> = <span style="color:#3af">50</span>; 
+	<span style="color:#00f">int</span> <span style="color:#000">guess</span>;
+	<span style="color:#00f">int</span> <span style="color:#000">max_num</span> = <span style="color:#3af">100</span>;
+	<span style="color:#00f">int</span> <span style="color:#000">min_num</span> = <span style="color:#3af">0</span>; 
+	<span style="color:#00f">int</span> <span style="color:#000">time</span> = <span style="color:#3af">0</span>;
+	
+	<span style="color:#00f">while</span>(<span style="color:#3af">1</span>){
+		<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;請猜一個&#34;</span> &lt;&lt; <span style="color:#000">min_num</span> &lt;&lt; <span style="color:#5a2">&#34; 到 &#34;</span> &lt;&lt; <span style="color:#000">max_num</span> &lt;&lt; <span style="color:#5a2">&#34;之間的數&#34;</span> ;
+		<span style="color:#000">cin</span> &gt;&gt; <span style="color:#000">guess</span>;
+		<span style="color:#000">time</span>++;
+		<span style="color:#00f">if</span> (<span style="color:#000">guess</span> == <span style="color:#000">my_num</span>){
+			<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;恭喜答對~&#34;</span> &lt;&lt; <span style="color:#5a2">&#34;一共猜了: &#34;</span> &lt;&lt; <span style="color:#000">time</span> &lt;&lt; <span style="color:#5a2">&#34; 次 &#34;</span>;
+			<span style="color:#00f">break</span>;
+		}
+		<span style="color:#00f">else</span> <span style="color:#00f">if</span>(<span style="color:#000">guess</span> &gt;= <span style="color:#000">my_num</span> &amp;&amp; <span style="color:#000">guess</span> &lt;= <span style="color:#000">max_num</span>){
+			<span style="color:#000">max_num</span> = <span style="color:#000">guess</span>;
+		}
+		<span style="color:#00f">else</span> <span style="color:#00f">if</span>(<span style="color:#000">guess</span> &lt;= <span style="color:#000">my_num</span> &amp;&amp; <span style="color:#000">guess</span> &gt;= <span style="color:#000">min_num</span>){
+			<span style="color:#000">min_num</span> = <span style="color:#000">guess</span>;
+		}
+		<span style="color:#00f">else</span>{
+			<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;別鬧了&#34;</span> &lt;&lt; <span style="color:#000">endl</span>; 
+		}
+	}
+<span style="color:#00f">return</span> <span style="color:#3af">0</span>;
+}
+</code></pre></div><ul>
+<li>
+<h4 id="do-while-迴圈">do-while 迴圈</h4>
+</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;iostream&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic"></span>
+<span style="color:#00f">using</span> <span style="color:#00f">namespace</span> <span style="color:#000">std</span>;
+
+<span style="color:#00f">int</span> <span style="color:#000">main</span>(){
+	<span style="color:#00f">char</span> <span style="color:#000">choice</span>;
+	<span style="color:#00f">int</span> <span style="color:#000">cost</span> = <span style="color:#3af">0</span>;
+	<span style="color:#00f">do</span>{
+		<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;想吃點什麼呢? </span><span style="color:#5a2">\n</span><span style="color:#5a2"> a.鮭魚壽司($100) </span><span style="color:#5a2">\n</span><span style="color:#5a2"> b.鰻魚壽司($200) </span><span style="color:#5a2">\n</span><span style="color:#5a2"> c.鮪魚刺身($500) </span><span style="color:#5a2">\n</span><span style="color:#5a2"> d.沙拉($80) </span><span style="color:#5a2">\n</span><span style="color:#5a2"> e.清酒($200)</span><span style="color:#5a2">\n</span><span style="color:#5a2">&#34;</span>;
+		<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;f.結帳&#34;</span> &lt;&lt; <span style="color:#000">endl</span>;
+		<span style="color:#000">cin</span> &gt;&gt; <span style="color:#000">choice</span>;
+		<span style="color:#00f">switch</span>(<span style="color:#000">choice</span>){
+			<span style="color:#00f">case</span> <span style="color:#5a2">&#39;a&#39;</span>:
+				<span style="color:#000">cost</span> += <span style="color:#3af">100</span>;
+				<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;鮭魚壽司現點現做，請稍等喔~&#34;</span> &lt;&lt; <span style="color:#000">endl</span>;
+				<span style="color:#00f">break</span>;
+			<span style="color:#00f">case</span> <span style="color:#5a2">&#39;b&#39;</span>:
+				<span style="color:#000">cost</span> += <span style="color:#3af">200</span>;
+				<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;鰻魚壽司現點現做，請稍等喔~&#34;</span> &lt;&lt; <span style="color:#000">endl</span>;
+				<span style="color:#00f">break</span>;
+			<span style="color:#00f">case</span> <span style="color:#5a2">&#39;c&#39;</span>:
+				<span style="color:#000">cost</span> += <span style="color:#3af">500</span>;
+				<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;鮪魚刺身現點現做，請稍等喔~&#34;</span> &lt;&lt; <span style="color:#000">endl</span>;
+				<span style="color:#00f">break</span>;
+			<span style="color:#00f">case</span> <span style="color:#5a2">&#39;d&#39;</span>:
+				<span style="color:#000">cost</span> += <span style="color:#3af">80</span>;
+				<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;沙拉現點現做，請稍等喔~&#34;</span> &lt;&lt; <span style="color:#000">endl</span>;
+				<span style="color:#00f">break</span>;
+			<span style="color:#00f">case</span> <span style="color:#5a2">&#39;e&#39;</span>:
+				<span style="color:#000">cost</span> += <span style="color:#3af">200</span>;
+				<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;開車不喝酒唷~ &#34;</span> &lt;&lt; <span style="color:#000">endl</span>;
+				<span style="color:#00f">break</span>; 
+			<span style="color:#00f">case</span> <span style="color:#5a2">&#39;f&#39;</span>:
+				<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;我要結帳~&#34;</span> &lt;&lt;<span style="color:#000">endl</span>;
+				<span style="color:#00f">break</span>;
+			<span style="color:#00f">default</span>:
+				<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;輸入有誤&#34;</span> &lt;&lt; <span style="color:#000">endl</span>;
+				<span style="color:#00f">break</span>;
+		}
+	}
+	<span style="color:#00f">while</span>(<span style="color:#000">choice</span> != <span style="color:#5a2">&#39;f&#39;</span>);
+		<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;消費金額: &#34;</span> &lt;&lt; <span style="color:#000">cost</span> &lt;&lt; <span style="color:#5a2">&#34;元&#34;</span> &lt;&lt; <span style="color:#000">endl</span>;
+<span style="color:#00f">return</span> <span style="color:#3af">0</span>;
+}
+</code></pre></div><ul>
+<li>
+<h4 id="巢狀迴圈">巢狀迴圈</h4>
+</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;iostream&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic"></span>
+<span style="color:#00f">using</span> <span style="color:#00f">namespace</span> <span style="color:#000">std</span>;
+
+<span style="color:#00f">int</span> <span style="color:#000">main</span>(){
+	<span style="color:#00f">int</span> <span style="color:#000">i</span>, <span style="color:#000">j</span>, <span style="color:#000">k</span>;
+	<span style="color:#00f">for</span>(<span style="color:#000">i</span> = <span style="color:#3af">1</span>; <span style="color:#000">i</span>&lt;=<span style="color:#3af">5</span>; <span style="color:#000">i</span>++){
+		<span style="color:#00f">for</span>(<span style="color:#000">j</span> = <span style="color:#3af">5</span>-<span style="color:#000">i</span>; <span style="color:#000">j</span> &gt; <span style="color:#3af">0</span>; <span style="color:#000">j</span>--){  <span style="color:#888;font-style:italic">//印出空白部分 
+</span><span style="color:#888;font-style:italic"></span>			<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34; &#34;</span>;
+		}
+		<span style="color:#00f">for</span>(<span style="color:#000">k</span> = <span style="color:#3af">2</span>*<span style="color:#000">i</span>-<span style="color:#3af">1</span>; <span style="color:#000">k</span> &gt; <span style="color:#3af">0</span>; <span style="color:#000">k</span>--){ <span style="color:#888;font-style:italic">//印出星星部分 
+</span><span style="color:#888;font-style:italic"></span>			<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;*&#34;</span>;
+		}
+		<span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">endl</span>;
+	}
+	<span style="color:#00f">return</span> <span style="color:#3af">0</span>;
+}
+</code></pre></div><ul>
+<li>
+<h4 id="防呆機制">防呆機制</h4>
+</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#00f">using</span> <span style="color:#00f">namespace</span> <span style="color:#000">std</span>;
+
+<span style="color:#00f">void</span> <span style="color:#000">measure</span>(<span style="color:#00f">float</span> , <span style="color:#00f">float</span> );
+<span style="color:#00f">void</span> <span style="color:#000">printAdvice</span>(<span style="color:#00f">int</span> );
+
+
+<span style="color:#00f">int</span> <span style="color:#000">main</span>(){
+	<span style="color:#00f">float</span> <span style="color:#000">height</span>, <span style="color:#000">weight</span>, <span style="color:#000">BMI</span>;
+	<span style="color:#000">flag</span>:
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;輸入身高體重&#34;</span>;
+	<span style="color:#000">cin</span> &gt;&gt; <span style="color:#000">height</span> &gt;&gt; <span style="color:#000">weight</span>;
+	<span style="color:#00f">if</span>(<span style="color:#000">height</span>&lt;=<span style="color:#3af">0</span> || <span style="color:#000">weight</span>&lt;=<span style="color:#3af">0</span>){
+		<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;不要鬧了&#34;</span> &lt;&lt; <span style="color:#000">endl</span>;
+		<span style="color:#00f">goto</span> <span style="color:#000">flag</span>; 
+	}
+	<span style="color:#00f">else</span>{
+		<span style="color:#000">height</span> = <span style="color:#000">height</span>/<span style="color:#3af">100</span>;
+		<span style="color:#000">BMI</span> = <span style="color:#000">weight</span>/(<span style="color:#000">height</span>*<span style="color:#000">height</span>);
+		<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;BMI值: &#34;</span> &lt;&lt; <span style="color:#000">BMI</span>;
+	}
+	<span style="color:#00f">return</span> <span style="color:#3af">0</span>;
+} 
+</code></pre></div><ul>
+<li>
+<h4 id="陣列array">陣列array</h4>
+</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;iostream&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic"></span>
+<span style="color:#00f">using</span> <span style="color:#00f">namespace</span> <span style="color:#000">std</span>;
+
+<span style="color:#00f">int</span> <span style="color:#000">main</span>(){
+	<span style="color:#00f">int</span> <span style="color:#000">expenditure</span>[<span style="color:#3af">7</span>];
+	<span style="color:#00f">int</span> <span style="color:#000">i</span>;
+	<span style="color:#00f">for</span>(<span style="color:#000">i</span> = <span style="color:#3af">0</span>; <span style="color:#000">i</span> &lt; <span style="color:#3af">7</span>; <span style="color:#000">i</span>++){
+		<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;輸入支出&#34;</span>;
+		<span style="color:#000">cin</span> &gt;&gt; <span style="color:#000">expenditure</span>[<span style="color:#000">i</span>];
+	}
+	
+	<span style="color:#00f">for</span>(<span style="color:#000">i</span> = <span style="color:#3af">0</span>; <span style="color:#000">i</span> &lt; <span style="color:#3af">7</span>; <span style="color:#000">i</span>++){
+		<span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">expenditure</span>[<span style="color:#000">i</span>] &lt;&lt; <span style="color:#000">endl</span>;
+		
+	}
+	
+	<span style="color:#00f">int</span> <span style="color:#000">total</span> = <span style="color:#3af">0</span>;
+	<span style="color:#00f">for</span>(<span style="color:#000">i</span> = <span style="color:#3af">0</span>; <span style="color:#000">i</span> &lt;<span style="color:#3af">7</span>; <span style="color:#000">i</span>++){
+		<span style="color:#000">total</span> += <span style="color:#000">expenditure</span>[<span style="color:#000">i</span>];
+		
+	}
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;總支出為: &#34;</span> &lt;&lt; <span style="color:#000">total</span> &lt;&lt; <span style="color:#000">endl</span>;
+	<span style="color:#00f">return</span> <span style="color:#3af">0</span>; 
+}
+</code></pre></div><ul>
+<li>
+<h4 id="多維陣列">多維陣列</h4>
+</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;iostream&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic"></span>
+<span style="color:#00f">using</span> <span style="color:#00f">namespace</span> <span style="color:#000">std</span>;
+
+<span style="color:#00f">int</span> <span style="color:#000">main</span>(){
+	<span style="color:#00f">int</span> <span style="color:#000">i</span>, <span style="color:#000">j</span>; <span style="color:#888;font-style:italic">// i 業務員代號，j 為季 
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#00f">int</span> <span style="color:#000">sale</span>[<span style="color:#3af">2</span>][<span style="color:#3af">4</span>]; <span style="color:#888;font-style:italic">// 存業務員及季 
+</span><span style="color:#888;font-style:italic"></span>	
+	<span style="color:#00f">for</span>(<span style="color:#000">i</span> = <span style="color:#3af">0</span>; <span style="color:#000">i</span> &lt;<span style="color:#3af">2</span>; <span style="color:#000">i</span>++){
+		<span style="color:#00f">for</span>(<span style="color:#000">j</span> = <span style="color:#3af">0</span>; <span style="color:#000">j</span> &lt; <span style="color:#3af">4</span>; <span style="color:#000">j</span>++){
+			<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;業務員&#34;</span> &lt;&lt; <span style="color:#000">i</span>+<span style="color:#3af">1</span> &lt;&lt; <span style="color:#5a2">&#34;在第&#34;</span> &lt;&lt; <span style="color:#000">j</span>+<span style="color:#3af">1</span> &lt;&lt; <span style="color:#5a2">&#34;季的銷售業績&#34;</span>;
+			<span style="color:#000">cin</span> &gt;&gt; <span style="color:#000">sale</span>[<span style="color:#000">i</span>][<span style="color:#000">j</span>]; 
+		}
+	}
+	<span style="color:#00f">int</span> <span style="color:#000">total</span>;
+	<span style="color:#00f">for</span>(<span style="color:#000">i</span> = <span style="color:#3af">0</span>; <span style="color:#000">i</span>&lt;<span style="color:#3af">2</span>; <span style="color:#000">i</span>++){
+		<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;業務員&#34;</span> &lt;&lt; <span style="color:#000">i</span>+<span style="color:#3af">1</span> &lt;&lt; <span style="color:#000">endl</span>;
+		<span style="color:#00f">for</span>(<span style="color:#000">j</span> = <span style="color:#3af">0</span>; <span style="color:#000">j</span> &lt; <span style="color:#3af">4</span>; <span style="color:#000">j</span>++){
+			<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;第&#34;</span> &lt;&lt; <span style="color:#000">j</span>+<span style="color:#3af">1</span> &lt;&lt; <span style="color:#5a2">&#34;季的銷售業績: &#34;</span> &lt;&lt; <span style="color:#000">sale</span>[<span style="color:#000">i</span>][<span style="color:#000">j</span>] &lt;&lt;<span style="color:#5a2">&#34;</span><span style="color:#5a2">\t</span><span style="color:#5a2">&#34;</span>;
+			<span style="color:#000">total</span> += <span style="color:#000">sale</span>[<span style="color:#000">i</span>][<span style="color:#000">j</span>];
+		} 
+		<span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">endl</span>;
+		
+	}
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;總銷售業績: &#34;</span> &lt;&lt; <span style="color:#000">total</span> &lt;&lt; <span style="color:#000">endl</span>;
+	<span style="color:#00f">return</span> <span style="color:#3af">0</span>;
+}
+</code></pre></div><ul>
+<li>
+<h4 id="指標">指標</h4>
+</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;iostream&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic"></span>
+<span style="color:#00f">using</span> <span style="color:#00f">namespace</span> <span style="color:#000">std</span>;
+
+<span style="color:#00f">int</span> <span style="color:#000">main</span>(){
+	<span style="color:#00f">int</span> <span style="color:#000">num</span> = <span style="color:#3af">100</span>;
+	<span style="color:#00f">int</span> * <span style="color:#000">ptr</span> = &amp;<span style="color:#000">num</span>;
+	<span style="color:#00f">int</span>** <span style="color:#000">ptr_2</span> = &amp;<span style="color:#000">ptr</span>;
+	<span style="color:#000">cout</span> &lt;&lt; *<span style="color:#000">ptr</span> &lt;&lt; <span style="color:#000">endl</span>;
+	<span style="color:#000">cout</span> &lt;&lt; **<span style="color:#000">ptr_2</span> &lt;&lt; <span style="color:#000">endl</span>;
+	<span style="color:#00f">return</span> <span style="color:#3af">0</span>;
+} 
+</code></pre></div><hr>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;iostream&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic"></span>
+<span style="color:#00f">using</span> <span style="color:#00f">namespace</span> <span style="color:#000">std</span>;
+
+<span style="color:#00f">int</span> <span style="color:#000">main</span>(){
+	<span style="color:#00f">int</span> <span style="color:#000">num</span>[<span style="color:#3af">5</span>];
+	<span style="color:#00f">int</span>* <span style="color:#000">ptr</span> = &amp;<span style="color:#000">num</span>[<span style="color:#3af">0</span>];
+	<span style="color:#00f">for</span>(<span style="color:#00f">int</span> <span style="color:#000">i</span> = <span style="color:#3af">0</span>; <span style="color:#000">i</span> &lt; <span style="color:#3af">5</span>; <span style="color:#000">i</span>++){
+		<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;請輸入陣列第&#34;</span> &lt;&lt; <span style="color:#000">i</span>+<span style="color:#3af">1</span> &lt;&lt; <span style="color:#5a2">&#34;筆資料: &#34;</span>;
+		<span style="color:#000">cin</span> &gt;&gt; *(<span style="color:#000">ptr</span>+<span style="color:#000">i</span>);
+	}
+	
+	<span style="color:#00f">for</span>(<span style="color:#00f">int</span> <span style="color:#000">i</span> = <span style="color:#3af">0</span>; <span style="color:#000">i</span> &lt; <span style="color:#3af">5</span>; <span style="color:#000">i</span>++){
+		<span style="color:#000">cout</span> &lt;&lt; *(<span style="color:#000">ptr</span>+<span style="color:#000">i</span>);
+	}
+}
+</code></pre></div><ul>
+<li>
+<h4 id="動態陣列-vector">動態陣列 Vector</h4>
+</li>
+</ul>
+<p>增加 #include <!-- raw HTML omitted --> 標頭檔
+增加 #include <!-- raw HTML omitted --> 標頭檔使用於排序</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;iostream&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;vector&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;algorithm&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic"></span><span style="color:#00f">using</span> <span style="color:#00f">namespace</span> <span style="color:#000">std</span>;
+
+<span style="color:#00f">int</span> <span style="color:#000">main</span>(){
+	<span style="color:#00f">char</span> <span style="color:#000">choice</span>;
+	<span style="color:#000">vector</span>&lt;<span style="color:#00f">int</span>&gt;<span style="color:#000">myVec</span>;
+	<span style="color:#00f">while</span>(<span style="color:#3af">1</span>){
+		<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;是否要新增資料(Y/N)&#34;</span>;
+		<span style="color:#000">cin</span> &gt;&gt; <span style="color:#000">choice</span>;
+		<span style="color:#00f">if</span>(<span style="color:#000">choice</span> == <span style="color:#5a2">&#39;Y&#39;</span>){
+			<span style="color:#00f">int</span> <span style="color:#000">temp</span>;
+			<span style="color:#000">cin</span> &gt;&gt; <span style="color:#000">temp</span>;
+			<span style="color:#000">myVec</span>.<span style="color:#000">push_back</span>(<span style="color:#000">temp</span>);
+		}
+		<span style="color:#00f">if</span>(<span style="color:#000">choice</span> == <span style="color:#5a2">&#39;N&#39;</span>){
+			<span style="color:#00f">break</span>;
+		}
+	}
+	<span style="color:#000">sort</span>(<span style="color:#000">myVec</span>.<span style="color:#000">begin</span>(), <span style="color:#000">myVec</span>.<span style="color:#000">end</span>());
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;myVec 排序後&#34;</span> &lt;&lt; <span style="color:#000">endl</span>;
+	<span style="color:#00f">for</span>(<span style="color:#00f">int</span> <span style="color:#000">i</span> = <span style="color:#3af">0</span>; <span style="color:#000">i</span> &lt; <span style="color:#000">myVec</span>.<span style="color:#000">size</span>(); <span style="color:#000">i</span>++){
+		<span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">myVec</span>[<span style="color:#000">i</span>] &lt;&lt; <span style="color:#5a2">&#34; &#34;</span>;
+	}
+}
+</code></pre></div><ul>
+<li>
+<h4 id="string-字串">String 字串</h4>
+</li>
+</ul>
+<p>新增 #include <!-- raw HTML omitted --> 標頭檔</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;iostream&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;string&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic"></span><span style="color:#00f">using</span> <span style="color:#00f">namespace</span> <span style="color:#000">std</span>;
+
+<span style="color:#00f">int</span> <span style="color:#000">main</span>(){
+	<span style="color:#888;font-style:italic">// append 
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#000">string</span> <span style="color:#000">greet</span> = <span style="color:#5a2">&#34;Hello &#34;</span>;
+	<span style="color:#000">string</span> <span style="color:#000">name</span> = <span style="color:#5a2">&#34;Hank&#34;</span>;
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">greet</span>.<span style="color:#000">append</span>(<span style="color:#000">name</span>) &lt;&lt; <span style="color:#000">endl</span>;
+	
+	<span style="color:#888;font-style:italic">// replace
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#000">string</span> <span style="color:#000">myString</span> = <span style="color:#5a2">&#34;this is a test&#34;</span>;
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">myString</span> &lt;&lt; <span style="color:#000">endl</span>;
+	<span style="color:#000">myString</span>.<span style="color:#000">replace</span>(<span style="color:#3af">10</span>,<span style="color:#3af">13</span>,<span style="color:#5a2">&#34;fun C++ program&#34;</span>); <span style="color:#888;font-style:italic">//從10開始替換到13 
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">myString</span> &lt;&lt; <span style="color:#000">endl</span>;
+	
+	<span style="color:#888;font-style:italic">// find 
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#000">string</span> <span style="color:#000">fruit</span> = <span style="color:#5a2">&#34;pineapple&#34;</span>;
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">fruit</span>.<span style="color:#000">find</span>(<span style="color:#5a2">&#34;apple&#34;</span>,<span style="color:#3af">0</span>) &lt;&lt; <span style="color:#000">endl</span>; <span style="color:#888;font-style:italic">//從0開始尋找apple的字串起始值
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#888;font-style:italic">// substr 擷取要的字串 
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#000">string</span> <span style="color:#000">str_2</span> = <span style="color:#000">fruit</span>.<span style="color:#000">substr</span>(<span style="color:#3af">4</span>,<span style="color:#3af">8</span>);  <span style="color:#888;font-style:italic">//從位置4開始擷取到8結束 
+</span><span style="color:#888;font-style:italic"></span>	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">fruit</span> &lt;&lt; <span style="color:#000">endl</span>;
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">str_2</span> &lt;&lt; <span style="color:#000">endl</span>; 
+	
+	<span style="color:#00f">return</span> <span style="color:#3af">0</span>;
+} 
+</code></pre></div><ul>
+<li>
+<h4 id="結構-struct">結構 Struct</h4>
+</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;iostream&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;string&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic"></span><span style="color:#00f">using</span> <span style="color:#00f">namespace</span> <span style="color:#000">std</span>;
+
+<span style="color:#00f">int</span> <span style="color:#000">main</span>(){
+	<span style="color:#00f">struct</span> <span style="color:#000">studentData</span>{
+		<span style="color:#000">string</span> <span style="color:#000">id</span>;
+		<span style="color:#000">string</span> <span style="color:#000">name</span>;
+		<span style="color:#000">string</span> <span style="color:#000">address</span>;
+		<span style="color:#00f">int</span> <span style="color:#000">age</span>;
+	};
+	<span style="color:#000">studentData</span> <span style="color:#000">myStudent</span>;
+	<span style="color:#000">myStudent</span>.<span style="color:#000">id</span> = <span style="color:#5a2">&#34;12345&#34;</span>;
+	<span style="color:#000">myStudent</span>.<span style="color:#000">name</span> = <span style="color:#5a2">&#34;Andy&#34;</span>;
+	<span style="color:#000">myStudent</span>.<span style="color:#000">address</span> = <span style="color:#5a2">&#34;桃園&#34;</span>;
+	<span style="color:#000">myStudent</span>.<span style="color:#000">age</span> = <span style="color:#3af">30</span>;
+	
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">myStudent</span>.<span style="color:#000">id</span> &lt;&lt; <span style="color:#000">endl</span>;
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">myStudent</span>.<span style="color:#000">name</span> &lt;&lt; <span style="color:#000">endl</span>;
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">myStudent</span>.<span style="color:#000">address</span> &lt;&lt; <span style="color:#000">endl</span>;
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">myStudent</span>.<span style="color:#000">age</span> &lt;&lt; <span style="color:#000">endl</span>; 
+}
+</code></pre></div><hr>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;iostream&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic">#include</span><span style="color:#888;font-style:italic">&lt;string&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic"></span><span style="color:#00f">using</span> <span style="color:#00f">namespace</span> <span style="color:#000">std</span>;
+
+<span style="color:#00f">int</span> <span style="color:#000">main</span>(){
+	<span style="color:#00f">struct</span> <span style="color:#000">student</span>{
+		<span style="color:#000">string</span> <span style="color:#000">name</span>;
+		<span style="color:#00f">int</span> <span style="color:#000">grade</span>;
+	};
+	<span style="color:#000">student</span> <span style="color:#000">Data</span>[<span style="color:#3af">5</span>];
+	
+	<span style="color:#00f">for</span>(<span style="color:#00f">int</span> <span style="color:#000">i</span> = <span style="color:#3af">0</span>; <span style="color:#000">i</span> &lt; <span style="color:#3af">5</span>; <span style="color:#000">i</span>++){
+		<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;學生&#34;</span> &lt;&lt; <span style="color:#000">i</span>+<span style="color:#3af">1</span> &lt;&lt; <span style="color:#5a2">&#34;姓名: &#34;</span>;
+		<span style="color:#000">cin</span> &gt;&gt; <span style="color:#000">Data</span>[<span style="color:#000">i</span>].<span style="color:#000">name</span>;
+		<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;學生&#34;</span> &lt;&lt; <span style="color:#000">i</span>+<span style="color:#3af">1</span> &lt;&lt; <span style="color:#5a2">&#34;成績: &#34;</span>;
+		<span style="color:#000">cin</span> &gt;&gt; <span style="color:#000">Data</span>[<span style="color:#000">i</span>].<span style="color:#000">grade</span>; 
+	}
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;不及格的同學&#34;</span> &lt;&lt; <span style="color:#000">endl</span>; 
+	<span style="color:#00f">for</span>(<span style="color:#00f">int</span> <span style="color:#000">i</span> = <span style="color:#3af">0</span>; <span style="color:#000">i</span> &lt; <span style="color:#3af">5</span>; <span style="color:#000">i</span>++){
+		<span style="color:#00f">if</span>(<span style="color:#000">Data</span>[<span style="color:#000">i</span>].<span style="color:#000">grade</span> &lt; <span style="color:#3af">60</span>){
+			<span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">Data</span>[<span style="color:#000">i</span>].<span style="color:#000">name</span> &lt;&lt; <span style="color:#000">endl</span>;
+		}
+	}
+	<span style="color:#00f">return</span> <span style="color:#3af">0</span>;
+}
+</code></pre></div><ul>
+<li>
+<h4 id="函式">函式</h4>
+</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;iostream&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic"></span>
+<span style="color:#00f">using</span> <span style="color:#00f">namespace</span> <span style="color:#000">std</span>;
+
+<span style="color:#00f">void</span> <span style="color:#000">myFunction</span>(){
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;This is my first function&#34;</span> &lt;&lt; <span style="color:#000">endl</span>;
+	<span style="color:#00f">return</span>;
+} 
+<span style="color:#00f">int</span> <span style="color:#000">main</span>(){
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;呼叫函數&#34;</span> &lt;&lt; <span style="color:#000">endl</span>;
+	<span style="color:#000">myFunction</span>();
+	<span style="color:#00f">return</span> <span style="color:#3af">0</span>; 
+}
+</code></pre></div><hr>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;iostream&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic"></span>
+<span style="color:#00f">using</span> <span style="color:#00f">namespace</span> <span style="color:#000">std</span>;
+
+<span style="color:#00f">int</span> <span style="color:#000">abs</span>(<span style="color:#00f">int</span> <span style="color:#000">num</span>){
+	<span style="color:#00f">if</span>(<span style="color:#000">num</span> &gt;= <span style="color:#3af">0</span>){
+		<span style="color:#00f">return</span> <span style="color:#000">num</span>;
+	}
+	<span style="color:#00f">else</span>{
+		<span style="color:#00f">return</span> -<span style="color:#3af">1</span>*<span style="color:#000">num</span>;
+	}
+}
+
+<span style="color:#00f">int</span> <span style="color:#000">main</span>(){
+	<span style="color:#00f">int</span> <span style="color:#000">myNumber</span>;
+	<span style="color:#000">cin</span> &gt;&gt; <span style="color:#000">myNumber</span>;
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#000">abs</span>(<span style="color:#000">myNumber</span>);
+	<span style="color:#00f">return</span> <span style="color:#3af">0</span>;
+}
+</code></pre></div><hr>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;iostream&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;cmath&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic"></span><span style="color:#00f">using</span> <span style="color:#00f">namespace</span> <span style="color:#000">std</span>;
+
+<span style="color:#00f">void</span> <span style="color:#000">tune</span>(<span style="color:#00f">int</span> <span style="color:#000">arr</span>[], <span style="color:#00f">int</span> <span style="color:#000">size</span>){
+	<span style="color:#00f">for</span>(<span style="color:#00f">int</span> <span style="color:#000">i</span> = <span style="color:#3af">0</span>; <span style="color:#000">i</span> &lt; <span style="color:#000">size</span>; <span style="color:#000">i</span>++){
+		<span style="color:#000">arr</span>[<span style="color:#000">i</span>] = <span style="color:#000">sqrt</span>(<span style="color:#000">arr</span>[<span style="color:#000">i</span>])*<span style="color:#3af">10</span>;
+	}
+	<span style="color:#00f">return</span> ;
+}
+
+<span style="color:#00f">int</span> <span style="color:#000">main</span>(){
+	<span style="color:#00f">int</span> <span style="color:#000">score</span>[<span style="color:#3af">5</span>];
+	<span style="color:#00f">for</span>(<span style="color:#00f">int</span> <span style="color:#000">i</span> = <span style="color:#3af">0</span>; <span style="color:#000">i</span> &lt; <span style="color:#3af">5</span>; <span style="color:#000">i</span>++){
+		<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;輸入學生&#34;</span> &lt;&lt; <span style="color:#000">i</span> +<span style="color:#3af">1</span> &lt;&lt; <span style="color:#5a2">&#34;的成績: &#34;</span>;
+		<span style="color:#000">cin</span> &gt;&gt; <span style="color:#000">score</span>[<span style="color:#000">i</span>]; 
+	}
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;原始成績: &#34;</span> &lt;&lt; <span style="color:#000">endl</span>;
+	<span style="color:#00f">for</span>(<span style="color:#00f">int</span> <span style="color:#000">i</span> = <span style="color:#3af">0</span>; <span style="color:#000">i</span> &lt; <span style="color:#3af">5</span>; <span style="color:#000">i</span>++){
+		<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;學生&#34;</span> &lt;&lt; <span style="color:#000">i</span>+<span style="color:#3af">1</span> &lt;&lt; <span style="color:#5a2">&#34;成績&#34;</span> &lt;&lt; <span style="color:#000">score</span>[<span style="color:#000">i</span>] &lt;&lt; <span style="color:#000">endl</span>; 
+	} 
+	<span style="color:#000">tune</span>(<span style="color:#000">score</span>,<span style="color:#3af">5</span>);
+	
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;調分後成績: &#34;</span> &lt;&lt; <span style="color:#000">endl</span>;
+	<span style="color:#00f">for</span>(<span style="color:#00f">int</span> <span style="color:#000">i</span> =<span style="color:#3af">0</span>; <span style="color:#000">i</span> &lt; <span style="color:#3af">5</span>; <span style="color:#000">i</span>++){
+		<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;學生 &#34;</span> &lt;&lt; <span style="color:#000">i</span>+<span style="color:#3af">1</span> &lt;&lt; <span style="color:#5a2">&#34;成績&#34;</span> &lt;&lt; <span style="color:#000">score</span>[<span style="color:#000">i</span>] &lt;&lt; <span style="color:#000">endl</span>; 
+	} 
+	
+	<span style="color:#00f">return</span> <span style="color:#3af">0</span>;
+}
+</code></pre></div><hr>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#888;font-style:italic">#include</span> <span style="color:#888;font-style:italic">&lt;iostream&gt;</span><span style="color:#888;font-style:italic">
+</span><span style="color:#888;font-style:italic"></span>
+<span style="color:#00f">using</span> <span style="color:#00f">namespace</span> <span style="color:#000">std</span>;
+
+<span style="color:#00f">void</span> <span style="color:#000">convert</span>(<span style="color:#00f">int</span> &amp;<span style="color:#000">temp</span>){
+	<span style="color:#000">temp</span> = <span style="color:#000">temp</span>*<span style="color:#3af">9</span>/<span style="color:#3af">5</span> + <span style="color:#3af">32</span>;
+	<span style="color:#00f">return</span>;
+}
+
+<span style="color:#00f">int</span> <span style="color:#000">main</span>(){
+	<span style="color:#00f">int</span> <span style="color:#000">temperature</span>;
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;輸入攝氏溫度: &#34;</span>;
+	<span style="color:#000">cin</span> &gt;&gt; <span style="color:#000">temperature</span>;
+	<span style="color:#000">convert</span>(<span style="color:#000">temperature</span>);
+	<span style="color:#000">cout</span> &lt;&lt; <span style="color:#5a2">&#34;華氏溫度: &#34;</span> &lt;&lt; <span style="color:#000">temperature</span> &lt;&lt; <span style="color:#000">endl</span>;
+	<span style="color:#00f">return</span> <span style="color:#3af">0</span>; 
+}
+</code></pre></div>
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "claire-2" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://Clair1011.github.io"><img src="https://Clair1011.github.io/images/s.jpg" alt="阿羽的學習歷程"></a>
+      </div>
+               
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="tel:0919-601-270"><i
+                class="ti-mobile mr-3 text-primary"></i>0919-601-270</a></li>
+          
+                     
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Taiwan</li>
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:cweiyu1011@gmail.com"><i
+                class="ti-email mr-3 text-primary"></i>cweiyu1011@gmail.com</a>
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.facebook.com/winnie.smill/">facebook</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/winnie_smill/">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/Clair1011">github</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.linkedin.com/in/%E8%96%87%E7%BE%BD-%E9%99%B3-390a17116/">linkedin</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98">學習筆記</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://Clair1011.github.io/about">About</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2020 <a href="https://themefisher.com">Themefisher</a> All Rights Reserved |
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://Clair1011.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://Clair1011.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://Clair1011.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://Clair1011.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://Clair1011.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://Clair1011.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://Clair1011.github.io/plugins/search/mark.js"></script>
+
+<script src="https://Clair1011.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://Clair1011.github.io/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+</body>
+</html>
