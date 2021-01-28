@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="this is meta description">
+  <meta name="description" content="介紹文章使用方法">
   <meta name="author" content="Claire">
   <meta name="generator" content="Hugo 0.80.0" />
 
@@ -124,19 +124,134 @@
 </header>
 <!-- /navigation -->
 
-<section class="section">
+<section class="section-sm">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-        <div id="search-results"></div>
-        <script id="search-result-template" type="text/x-js-template">
-          <div class="py-4 border-bottom" id="summary-${key}">
-            <h4><a href="${link}">${title}</a></h4>
-            <p>${snippet}</p>
-            ${ isset tags }<p>Tags: ${tags}</p>${ end }
-            ${ isset categories }<p>Categories: ${categories}</p>${ end }
-          </div>
-        </script>
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        
+        <a href="/categories/%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98"
+          class="text-primary">學習筆記</a>
+        
+        <h2>Markdown語法筆記</h2>
+        <div class="mb-3 post-meta">
+          <span>By Claire</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>27 January 2021</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <p><code>一級標題: # + 標題</code></p>
+<h1 id="heading-1">Heading 1</h1>
+<p><code>二級標題: ## + 標題</code></p>
+<h2 id="heading-2">Heading 2</h2>
+<p><code>三級標題: ### + 標題</code></p>
+<h3 id="heading-3">Heading 3</h3>
+<p><code>四級標題: #### + 標題</code></p>
+<h4 id="heading-4">Heading 4</h4>
+<p><code>五級標題: ##### + 標題</code></p>
+<h5 id="heading-5">Heading 5</h5>
+<p><code>六級標題: ###### + 標題</code></p>
+<h6 id="heading-6">Heading 6</h6>
+<p><code>粗體文字前後加上**</code>
+<code>**阿羽**</code>
+<strong>阿羽</strong></p>
+<p><code>斜體文字前後加上*</code>
+<code>*學習*</code>
+<em>學習</em></p>
+<p><code>有序序列1. 文字，依號碼依序，若要內縮，前面四個空格鍵</code></p>
+<ol>
+<li>有序序列1
+<ol>
+<li>內縮文字1</li>
+</ol>
+</li>
+<li>有序序列2</li>
+</ol>
+<p><code>無序序列 * 文字 </code></p>
+<ul>
+<li>無序序列1
+<ul>
+<li>內縮文字</li>
+</ul>
+</li>
+<li>無序序列2</li>
+</ul>
+<p><code>引用為開頭加上 &gt; </code>
+<code>&gt; 引用</code></p>
+<blockquote>
+<p>引用</p>
+</blockquote>
+<p><code>[]←輸入欲呈現的文字，()←內容置入連結路徑。</code></p>
+<p><code>[GitHub網站](https://github.com/Clair1011)</code></p>
+<p><a href="https://github.com/Clair1011">GitHub網站</a></p>
+<p><code>插入圖片: ![](填入圖片路徑)</code></p>
+<p><img src="https://m-miya.net/wp-content/uploads/2014/07/0-065-1.min_.jpg" alt=""></p>
+<p>程式碼插入方式: 前後各加 `</p>
+<p><code>hello</code></p>
+<p><code>多行程式碼前後各```三次，並於表頭設定所用程式語言，即可呈現該程式語言預設顯示的樣式</code></p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">print</span>(<span style="color:#5a2">&#34;hello world&#34;</span>)
+<span style="color:#00f">print</span>(<span style="color:#5a2">&#34;hello world&#34;</span>)
+</code></pre></div><p><code>表格建立方式</code></p>
+<p><img src="/images/table.jpg" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th style="text-align:center">Are</th>
+<th style="text-align:right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td style="text-align:center">right-aligned</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td style="text-align:center">are neat</td>
+<td style="text-align:right">$1</td>
+</tr>
+</tbody>
+</table>
+<p><code>Youtube 插入</code></p>
+<p><code>{{&gt; youtube + youtube網頁名稱}}</code></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/w7Ft2ymGmfc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "claire-2" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
       </div>
     </div>
   </div>
